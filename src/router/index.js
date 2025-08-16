@@ -1,5 +1,6 @@
 import HomePage from '@/View/HomePage.vue'
-import LayoutView from '@/View/LayoutView.vue'
+import Table from '@/View/table.vue'
+import Textarea from '@/View/textarea.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -11,10 +12,17 @@ const router = createRouter({
       component: HomePage
     },
     {
-      path: '/layout',
-      name: 'Layout',
-      component: LayoutView
+      path:'/table',
+      name: 'table',
+      component: Table
     },
+     {
+      path:'/textarea',
+      name: 'textarea',
+      component: Textarea
+
+    }
+
   ],
 })
 
