@@ -1,5 +1,6 @@
 import HomePage from '@/View/HomePage.vue'
 import ButtonPage from '@/View/ButtonPage.vue'
+import LayoutView from '@/View/LayoutView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import FileUpload from '@/View/FileUpload.vue'
 
@@ -20,7 +21,12 @@ const router = createRouter({
       path: '/fileUpload',
       name: 'FileUpload',
       component: FileUpload
-    }
+    },
+    {
+      path: '/layout',
+      name: 'Layout',
+      component: LayoutView
+    },
   ],
 })
 
