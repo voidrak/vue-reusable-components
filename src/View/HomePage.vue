@@ -3,6 +3,9 @@
 <template>
   <div>
     <h1 class="text-red-400 text-4xl mt-16 ml-8">Welcome to the Home Page!</h1>
+    <h1 class="text-red-400 text-2xl uppercase">
+      Do not Forget to create new branch
+    </h1>
     <ul class="ml-48 mt-10">
       <li class="font-bold">Create New View in view folder</li>
       <li class="font-bold">
