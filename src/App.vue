@@ -1,7 +1,9 @@
-<script setup></script>
+<script setup>
+import SidebarProvider from "@/Layout/Components/SidebarProvider.vue";
+</script>
 
 <template>
-  <RouterView />
+  <SidebarProvider>
+    <RouterView />
+  </SidebarProvider>
 </template>
-
-<style scoped></style>
