@@ -2,11 +2,13 @@
 
 <template>
   <div>
-    <h1 class="text-red-400">Welcome to the Home Page!</h1>
-    <ul>
-      <li class="">Create New View in view folder</li>
-      <li class="">You Can Access the primary color using the below</li>
-      <li class="">primary-25: #f2f7ff;</li>
+    <h1 class="text-red-400 text-4xl mt-16 ml-8">Welcome to the Home Page!</h1>
+    <ul class="ml-48 mt-10">
+      <li class="font-bold">Create New View in view folder</li>
+      <li class="font-bold">
+        You Can Access the primary color using the below
+      </li>
+      <li class="font-semibold">primary-25: #f2f7ff;</li>
       <li class="">primary-50: #ecf3ff;</li>
       <li class="">primary-100: #dde9ff;</li>
       <li class="">primary-200: #c2d6ff;</li>
