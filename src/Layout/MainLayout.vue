@@ -13,7 +13,7 @@ const { isExpanded, isHovered } = useSidebar();
       :class="[isExpanded || isHovered ? 'lg:ml-[290px]' : 'lg:ml-[90px]']"
     >
       <AppHeader />
-      <div class="p-4 mx-auto max-w-(--breakpoint-2xl) md:p-6">
+      <div class="p-4 mx-auto max-w-(--breakpoint-2xl) md:p-6 relative">
         <slot></slot>
       </div>
     </div>
