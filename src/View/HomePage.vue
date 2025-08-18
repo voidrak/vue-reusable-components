@@ -1,6 +1,10 @@
-<script setup></script>
+<script setup>
+import MainLayout from '@/Layout/MainLayout.vue';
+
+</script>
 
 <template>
+  <MainLayout>
   <div>
     <h1 class="text-red-400 text-4xl mt-16 ml-8">Welcome to the Home Page!</h1>
     <h1 class="text-red-400 text-2xl uppercase">
@@ -25,4 +29,5 @@
       <li class="">primary-950: #161950;</li>
     </ul>
   </div>
+  </MainLayout>
 </template>
