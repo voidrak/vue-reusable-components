@@ -1,6 +1,6 @@
 import HomePage from '@/View/HomePage.vue'
 import Table from '@/View/table.vue'
-import Textarea from '@/View/textarea.vue'
+import TextArea from '@/View/TextArea.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -19,7 +19,7 @@ const router = createRouter({
      {
       path:'/textarea',
       name: 'textarea',
-      component: Textarea
+      component: TextArea
 
     }
 

@@ -1,4 +1,5 @@
 <template>
+  <MainLayout>
   <div class="flex flex-col p-6 w-full overflow-hidden mb-3 bg-white dark:bg-gray-800 rounded-lg">
     <div class="max-w-full overflow-x-auto custom-scrollbar">
       <table class="min-w-full border-collapse">
@@ -75,9 +76,12 @@
       </div>
     </div>
   </div>
+  </MainLayout>
 </template>
 
 <script>
+import MainLayout from '@/Layout/MainLayout.vue';
+// import MainLayout from '@/Layout/MainLayout.vue';
 export default {
   data() {
     return {
