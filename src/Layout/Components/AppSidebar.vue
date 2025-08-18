@@ -13,7 +13,6 @@ const menuGroups = [
     items: [
       {
         name: "Dashboard",
-        subItems: [{ name: "Ecommerce", path: "/", pro: false }],
       },
       {
         name: "Calendar",
@@ -26,52 +25,13 @@ const menuGroups = [
 
       {
         name: "Forms",
-        subItems: [
-          { name: "Form Elements", path: "/form-elements", pro: false },
-        ],
       },
       {
         name: "Tables",
-        subItems: [{ name: "Basic Tables", path: "/basic-tables", pro: false }],
       },
       {
         name: "Pages",
-        subItems: [
-          { name: "Black Page", path: "/blank", pro: false },
-          { name: "404 Page", path: "/error-404", pro: false },
-        ],
       },
-    ],
-  },
-  {
-    title: "Others",
-    items: [
-      {
-        name: "Charts",
-        subItems: [
-          { name: "Line Chart", path: "/line-chart", pro: false },
-          { name: "Bar Chart", path: "/bar-chart", pro: false },
-        ],
-      },
-      {
-        name: "Ui Elements",
-        subItems: [
-          { name: "Alerts", path: "/alerts", pro: false },
-          { name: "Avatars", path: "/avatars", pro: false },
-          { name: "Badge", path: "/badge", pro: false },
-          { name: "Buttons", path: "/buttons", pro: false },
-          { name: "Images", path: "/images", pro: false },
-          { name: "Videos", path: "/videos", pro: false },
-        ],
-      },
-      {
-        name: "Authentication",
-        subItems: [
-          { name: "Signin", path: "/signin", pro: false },
-          { name: "Signup", path: "/signup", pro: false },
-        ],
-      },
-      // ... Add other menu items here
     ],
   },
 ];
@@ -181,7 +141,7 @@ const endTransition = (el) => {
                   </span>
                   <span
                     v-if="isExpanded || isHovered || isMobileOpen"
-                    class="menu-item-text"
+                    class="menu-item-text dark:text-white"
                     >{{ item.name }}</span
                   >
                 </button>
@@ -205,7 +165,7 @@ const endTransition = (el) => {
                   </span>
                   <span
                     v-if="isExpanded || isHovered || isMobileOpen"
-                    class="menu-item-text"
+                    class="menu-item-text dark:text-white"
                     >{{ item.name }}</span
                   >
                 </router-link>
@@ -220,62 +180,7 @@ const endTransition = (el) => {
                       isSubmenuOpen(groupIndex, index) &&
                       (isExpanded || isHovered || isMobileOpen)
                     "
-                  >
-                    <ul class="mt-2 space-y-1 ml-9">
-                      <li v-for="subItem in item.subItems" :key="subItem.name">
-                        <router-link
-                          :to="{ name: 'Home' }"
-                          :class="[
-                            'menu-dropdown-item',
-                            {
-                              'menu-dropdown-item-active': isActive(
-                                subItem.path
-                              ),
-                              'menu-dropdown-item-inactive': !isActive(
-                                subItem.path
-                              ),
-                            },
-                          ]"
-                        >
-                          {{ subItem.name }}
-                          <span class="flex items-center gap-1 ml-auto">
-                            <span
-                              v-if="subItem.new"
-                              :class="[
-                                'menu-dropdown-badge',
-                                {
-                                  'menu-dropdown-badge-active': isActive(
-                                    subItem.path
-                                  ),
-                                  'menu-dropdown-badge-inactive': !isActive(
-                                    subItem.path
-                                  ),
-                                },
-                              ]"
-                            >
-                              new
-                            </span>
-                            <span
-                              v-if="subItem.pro"
-                              :class="[
-                                'menu-dropdown-badge',
-                                {
-                                  'menu-dropdown-badge-active': isActive(
-                                    subItem.path
-                                  ),
-                                  'menu-dropdown-badge-inactive': !isActive(
-                                    subItem.path
-                                  ),
-                                },
-                              ]"
-                            >
-                              pro
-                            </span>
-                          </span>
-                        </router-link>
-                      </li>
-                    </ul>
-                  </div>
+                  ></div>
                 </transition>
               </li>
             </ul>
