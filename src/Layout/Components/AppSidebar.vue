@@ -29,7 +29,7 @@ const menuGroups = [
         path: "Table",
       },
       {
-        name: "Layout",
+        name: "DropdownMenu",
         path: "Layout",
       },
       {
