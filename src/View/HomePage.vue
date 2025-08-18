@@ -1,13 +1,16 @@
 <script setup>
+ 
     import Popup from '@/Components/Popup.vue'
     import { ref } from 'vue'
 
     const showPopupCenter = ref(false)
     const showPopupRight = ref(false)
+ 
 
 </script>
 
 <template>
+ 
     <div>
         <div
             class="fixed top-4 right-4 bg-blue-500 text-white px-4 py-2 rounded cursor-pointer"
@@ -92,4 +95,5 @@
         </ul>
         
     </popup>
+
 </template>
