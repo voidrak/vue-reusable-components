@@ -25,16 +25,21 @@ const router = createRouter({
       component: FileUpload
     },
     {
-      path:'/table',
+      path: '/table',
       name: 'Table',
       component: Table
     },
-     {
-      path:'/textarea',
+    {
+      path: '/textarea',
       name: 'textarea',
       component: TextArea
 
     }
+     {
+      path: '/layout',
+      name: 'Layout',
+      component: LayoutView
+    },
 
   ],
 })
