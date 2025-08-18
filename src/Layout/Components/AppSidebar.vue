@@ -12,25 +12,29 @@ const menuGroups = [
     title: "Menu",
     items: [
       {
-        name: "Dashboard",
+        name: "Home",
+        path: "Home",
       },
       {
-        name: "Calendar",
-        path: "/calendar",
+        name: "Buttons",
+        path: "Buttons",
       },
       {
-        name: "User Profile",
-        path: "/profile",
+        name: "FileUpload",
+        path: "FileUpload",
       },
 
       {
-        name: "Forms",
+        name: "Table",
+        path: "Table",
       },
       {
-        name: "Tables",
+        name: "Layout",
+        path: "Layout",
       },
       {
-        name: "Pages",
+        name: "Textarea",
+        path: "textarea",
       },
     ],
   },
@@ -146,7 +150,7 @@ const endTransition = (el) => {
                   >
                 </button>
                 <router-link
-                  :to="{ name: 'Home' }"
+                  :to="{ name: item.path }"
                   :class="[
                     'menu-item group',
                     {
