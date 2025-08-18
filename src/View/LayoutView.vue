@@ -1,15 +1,30 @@
 <script setup>
 import DropdownMenu from "@/Components/DropdownMenu.vue";
 import MainLayout from "@/Layout/MainLayout.vue";
+
+// Define your functions
+const viewMore = () => {
+  console.log("View More clicked");
+};
+
+const deleteItem = () => {
+  console.log("Delete clicked");
+};
+
+const editItem = () => {
+  console.log("Edit clicked");
+};
+
 const menuItems = [
-  { label: "View More", onClick: () => console.log("View More clicked") },
-  { label: "Delete", onClick: () => console.log("Delete clicked") },
+  { label: "View More", onClick: viewMore },
+  { label: "Edit", onClick: editItem },
+  { label: "Delete", onClick: deleteItem },
 ];
 </script>
 
 <template>
   <MainLayout>
-    <div class="w-md relative bg-amber-200 h-64">
+    <div class="w-md relative h-64">
       <DropdownMenu :menu-items="menuItems">
         <template #icon>
           <svg
