@@ -5,6 +5,7 @@ import FileUpload from '@/View/FileUpload.vue'
 import ButtonPage from '@/View/ButtonPage.vue'
 import Table from '@/View/Table.vue'
 import TextArea from '@/View/TextArea.vue'
+import Showcase from '@/View/Showcase.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +40,11 @@ const router = createRouter({
       path: '/layout',
       name: 'Layout',
       component: LayoutView
+    },
+    {
+      path: '/showcase',
+      name: 'Showcase',
+      component: Showcase
     },
 
   ],

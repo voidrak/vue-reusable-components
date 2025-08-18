@@ -36,6 +36,10 @@ const menuGroups = [
         name: "Textarea",
         path: "textarea",
       },
+      {
+        name: "Avatar , Input , Searchbar",
+        path: "Showcase",
+      },
     ],
   },
 ];
