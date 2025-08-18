@@ -34,8 +34,8 @@ const router = createRouter({
       name: 'textarea',
       component: TextArea
 
-    }
-     {
+    },
+    {
       path: '/layout',
       name: 'Layout',
       component: LayoutView
