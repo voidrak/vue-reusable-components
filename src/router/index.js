@@ -3,7 +3,7 @@ import LayoutView from '@/View/LayoutView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import FileUpload from '@/View/FileUpload.vue'
 import ButtonPage from '@/View/ButtonPage.vue'
-
+// import Table from '@/View/table.vue'
 import TextArea from '@/View/TextArea.vue'
 import Parenttableexample from '@/View/parenttableexample.vue'
 
@@ -29,7 +29,7 @@ const router = createRouter({
     },
     {
       path: '/table',
-      name: 'ParentTableExample',
+      name: 'Table',
       component: Parenttableexample
     },
     {
