@@ -3,9 +3,11 @@ import LayoutView from '@/View/LayoutView.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import FileUpload from '@/View/FileUpload.vue'
 import ButtonPage from '@/View/ButtonPage.vue'
-import Table from '@/View/Table.vue'
+// import Table from '@/View/table.vue'
 import TextArea from '@/View/TextArea.vue'
 import Showcase from '@/View/Showcase.vue'
+import Parenttableexample from '@/View/parenttableexample.vue'
+ 
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +17,8 @@ const router = createRouter({
       name: 'Home',
       component: HomePage
     },
+
+
     {
       path: '/buttons',
       name: 'Buttons',
@@ -28,7 +32,7 @@ const router = createRouter({
     {
       path: '/table',
       name: 'Table',
-      component: Table
+      component: Parenttableexample
     },
     {
       path: '/textarea',

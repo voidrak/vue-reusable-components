@@ -1,3 +1,4 @@
+<!-- TextArea.vue -->
 <template>
   <MainLayout>
     <div class="space-y-6">
@@ -60,4 +61,20 @@ import { ref } from "vue";
 const normalDescription = ref("");
 const disabledDescription = ref("This textarea is disabled");
 const errorDescription = ref("");
+import { defineProps, defineModel } from 'vue'
+
+// ✅ Props for rows, cols, label etc
+const props = defineProps({
+  label: { type: String, default: 'Description' },
+  rows: { type: Number, default: 6 },
+  cols: { type: Number, default: 50 },
+  placeholder: { type: String, default: 'Enter text...' },
+  disabled: { type: Boolean, default: false },
+})
+
+
+const model = defineModel()
 </script>
+
+<!-- usage examaple: -->
+<!-- <TextArea v-model="myText" :rows="10" :cols="80" label="Notes" /> -->
