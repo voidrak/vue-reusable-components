@@ -29,12 +29,16 @@ const menuGroups = [
         path: "Table",
       },
       {
-        name: "Layout",
+        name: "DropdownMenu",
         path: "Layout",
       },
       {
         name: "Textarea",
         path: "textarea",
+      },
+      {
+        name: "Avatar , Input , Searchbar",
+        path: "Showcase",
       },
     ],
   },
