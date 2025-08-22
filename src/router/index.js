@@ -6,7 +6,7 @@ import ButtonPage from '@/View/ButtonPage.vue'
 // import Table from '@/View/table.vue'
 import TextArea from '@/View/TextArea.vue'
 import Parenttableexample from '@/View/parenttableexample.vue'
-
+import Profile from '@/View/userprofile.vue'
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -42,6 +42,11 @@ const router = createRouter({
       path: '/layout',
       name: 'Layout',
       component: LayoutView
+    },
+     {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile
     },
 
   ],
